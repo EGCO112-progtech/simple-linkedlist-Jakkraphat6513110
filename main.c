@@ -88,7 +88,7 @@ int main(int argc, const char * argv[]) {
     while(tmp != NULL){
 
         struct node* next = tmp->next;
-        printf("deleting : %d\n",tmp->value);
+        //printf("free : %d\n",tmp->value);
         free(tmp);
         tmp = next;
     }
